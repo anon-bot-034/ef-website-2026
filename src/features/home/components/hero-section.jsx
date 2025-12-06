@@ -16,7 +16,7 @@ const HeroSection = () => {
         width={800}
         height={600}
       />
-      <Image
+      {/* <Image
         className="hidden lg:block absolute left-4 xl:left-36 2xl:left-56 3xl:left-96 top-80 xl:top-64"
         src="/images/hero-cursor-1.png"
         alt=""
@@ -29,7 +29,7 @@ const HeroSection = () => {
         alt=""
         width={60}
         height={60}
-      />
+      /> */}
       <div className="relative z-50">
         <h1 className="font-heading text-white text-center text-4xl sm:text-5xl md:text-7xl font-bold max-w-sm sm:max-w-xl md:max-w-3xl mx-auto mb-6">
     Welcome to Erin's Farm
@@ -48,6 +48,7 @@ const HeroSection = () => {
         <Image
           className="w-full object-cover"
           // src="/images/hero-dashboard.png"
+          src="/images/kids-looking-at-cows.jpg"
           alt=""
           width={1200}
           height={800}
