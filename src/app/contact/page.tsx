@@ -3,15 +3,17 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import PlaceholderContent from '@/components/ui/placeholder-content';
 import CTASection from '@/components/common/cta-section';
+import ContactUsText from '@/components/ui/contact-us';
 
 export default function ContactPage() {
   return (
     <div className="bg-body text-body font-body antialiased">
-      <AnnouncementBar />
+      {/* <AnnouncementBar /> */}
       <section className="bg-darkBlue-900">
         <Header />
       </section>
       {/* <PlaceholderContent /> */}
+      <ContactUsText  />
       {/* // <CTASection /> */}
       {/* <Footer /> */}
     </div>
