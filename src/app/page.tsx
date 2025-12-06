@@ -1,6 +1,7 @@
 'use client';
 
-import AnnouncementBar from '@/components/layout/announcement-bar';
+// Announcements as needed @connor.yanz
+// import AnnouncementBar from '@/components/layout/announcement-bar';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import HeroSection from '@/features/home/components/hero-section';
@@ -11,17 +12,17 @@ import CTASection from '@/components/common/cta-section';
 export default function HomePage() {
   return (
     <div className="bg-body text-body font-body antialiased">
-      <AnnouncementBar />
-      <section className="bg-gradient-to-b from-darkBlue-900 via-blue-700 to-blue-400">
+      {/* <AnnouncementBar /> */}
+      <section className="bg-gradient-to-b from-darkGreen-900 via-green-700 to-green-400">
         <Header variant="home" />
         <div className="container mx-auto px-4">
           <HeroSection />
         </div>
       </section>
-      <HowItWorksSection />
+      {/* <HowItWorksSection /> */}
       <FeaturesSection />
-      <CTASection />
-      <Footer />
+      {/* // <CTASection /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

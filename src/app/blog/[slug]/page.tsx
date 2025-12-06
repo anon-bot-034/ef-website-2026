@@ -12,7 +12,7 @@ export default function BlogSinglePage() {
         <Header />
       </section>
       <PlaceholderContent />
-      <CTASection />
+      {/* // <CTASection /> */}
       <Footer />
     </div>
   );

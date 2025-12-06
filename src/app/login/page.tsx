@@ -12,7 +12,7 @@ export default function LoginPage() {
         <Header />
       </section>
       <PlaceholderContent />
-      <CTASection />
+      {/* // <CTASection /> */}
       <Footer />
     </div>
   );

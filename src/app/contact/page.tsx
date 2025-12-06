@@ -11,9 +11,9 @@ export default function ContactPage() {
       <section className="bg-darkBlue-900">
         <Header />
       </section>
-      <PlaceholderContent />
-      <CTASection />
-      <Footer />
+      {/* <PlaceholderContent /> */}
+      {/* // <CTASection /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

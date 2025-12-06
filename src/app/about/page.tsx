@@ -12,8 +12,8 @@ export default function AboutPage() {
         <Header />
       </section>
       <PlaceholderContent />
-      <CTASection />
-      <Footer />
+      {/* // <CTASection /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

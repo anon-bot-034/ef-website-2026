@@ -32,22 +32,22 @@ const HeroSection = () => {
       />
       <div className="relative z-50">
         <h1 className="font-heading text-white text-center text-4xl sm:text-5xl md:text-7xl font-bold max-w-sm sm:max-w-xl md:max-w-3xl mx-auto mb-6">
-          Bookkeeping tools tailored for business owners
+    Welcome to Erin's Farm
         </h1>
         <p className="text-center text-white text-lg mb-12">
-          Daily bookkeeping for the modern business owner.
+        We are a horse, farmed animal & exotic animal rescue & sanctuary specializing in hands on education for our community & beyond
         </p>
-        <div className="mb-20 text-center">
+        {/* <div className="mb-20 text-center">
           <GradientButton href="#" variant="white">
             <span className="mr-2">Get started</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M9.43032 8.28857L9.4303 8.28856L9.42602 8.29284L6.45312 11.2657V8.20662V4.7275L8.11268 6.38706L9.42602 7.70039C9.59121 7.86558 9.58501 8.13574 9.43032 8.28857Z" fill="black" stroke="currentColor" strokeWidth="2"></path>
             </svg>
           </GradientButton>
-        </div>
+        </div> */}
         <Image
           className="w-full object-cover"
-          src="/images/hero-dashboard.png"
+          // src="/images/hero-dashboard.png"
           alt=""
           width={1200}
           height={800}

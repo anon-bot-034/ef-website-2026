@@ -2,7 +2,9 @@ import Image from 'next/image';
 import features from '@/data/features.json';
 
 const FeaturesSection = () => {
-  if (!features) return null;
+  // TODO we can add back features connor.yanz
+  // if (!features) return null;
+  return null;
   return (
     <section className="bg-darkBlue-900 py-28">
       <div className="container max-w-8xl mx-auto px-4">

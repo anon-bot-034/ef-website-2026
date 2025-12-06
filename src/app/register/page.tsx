@@ -12,7 +12,7 @@ export default function RegisterPage() {
         <Header />
       </section>
       <PlaceholderContent />
-      <CTASection />
+      {/* // <CTASection /> */}
       <Footer />
     </div>
   );

@@ -12,7 +12,7 @@ export default function PricingPage() {
         <Header />
       </section>
       <PlaceholderContent />
-      <CTASection />
+      {/* // <CTASection /> */}
       <Footer />
     </div>
   );

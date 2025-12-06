@@ -16,8 +16,9 @@ const Header = ({ variant = 'home' }) => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/pricing', label: 'Pricing' },
-    { href: '/blog', label: 'Blog' },
+    // { href: '/pricing', label: 'Pricing' },
+    // { href: '/the-animals', label: 'The Animals' },
+    // { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' }
   ];
 
@@ -26,7 +27,8 @@ const Header = ({ variant = 'home' }) => {
       <nav className={`py-5 ${variant === 'home' ? 'border-b border-white/10' : ''}`}>
           <div className="flex items-center justify-between">
             <Link href="/">
-              <Image src="/images/logo-white-2.svg" alt="" width={120} height={40} />
+              {/* <Image src="/images/logo-white-2.svg" alt="" width={120} height={40} /> */}
+              <Image src="/images/erins-farm-logo.png" alt="" width={120} height={40} />
             </Link>
             <div className="hidden lg:flex gap-2 p-1 rounded-full bg-white/10">
               {navItems.map((item) => (
@@ -39,7 +41,7 @@ const Header = ({ variant = 'home' }) => {
                 </Link>
               ))}
             </div>
-            <Link
+            {/* <Link
               className="hidden lg:flex items-center gap-2 text-white hover:text-blue-800 transition duration-200"
               href="/login"
             >
@@ -47,7 +49,7 @@ const Header = ({ variant = 'home' }) => {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M5.5 3L10.5 8L5.5 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
               </svg>
-            </Link>
+            </Link> */}
             <button
               className="lg:hidden"
               onClick={() => setMobileNavOpen(!mobileNavOpen)}
@@ -69,7 +71,7 @@ const Header = ({ variant = 'home' }) => {
         <nav className="relative z-[9999] w-5/6 max-w-xs h-full bg-white overflow-y-auto p-8 shadow-xl">
           <div className="flex items-center justify-between">
             <Link className="inline-block" href="/">
-              <Image src="/images/logo-black-2.svg" alt="" width={120} height={40} />
+              <Image src="/images/erins-farm-logo.png" alt="" width={120} height={40} />
             </Link>
             <button onClick={() => setMobileNavOpen(false)}>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +87,7 @@ const Header = ({ variant = 'home' }) => {
             ))}
           </ul>
           <div className="text-center">
-            <Link
+            {/* <Link
               className="inline-flex items-center gap-2 text-black hover:text-opacity-80 transition duration-200"
               href="/login"
             >
@@ -93,7 +95,7 @@ const Header = ({ variant = 'home' }) => {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M5.5 3L10.5 8L5.5 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
               </svg>
-            </Link>
+            </Link> */}
           </div>
         </nav>
       </div>
