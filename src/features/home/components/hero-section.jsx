@@ -21,6 +21,9 @@ const HeroSection = () => {
           <h1 className="font-heading text-white text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
             Welcome to Erin's Farm
           </h1>
+          <p className="mt-4 text-white/80 text-lg md:text-xl max-w-xl leading-relaxed">
+            We rescue &amp; provide sanctuary for animals in need and educate through their stories, in order to change the world of tomorrow.
+          </p>
         </div>
       </div>
     </div>
