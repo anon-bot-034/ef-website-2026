@@ -87,6 +87,10 @@ export default function DonatePage() {
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm font-semibold tracking-widest uppercase text-white/60 mb-4">Support Our Mission</p>
           <h1 className="font-heading text-white text-4xl md:text-6xl font-bold">Donate</h1>
+          <p className="mt-4 text-white/70 max-w-xl mx-auto">
+            Every dollar helps us care for our animals and grow our programs.
+            You can also make a donation in honor or in memory of a loved one, or give the gift of giving to a friend or family member.
+          </p>
         </div>
       </section>
 
