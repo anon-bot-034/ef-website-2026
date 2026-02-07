@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-2xl">
           <h1 className="font-heading text-white text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
-            Welcome to Erin's Farm.
+            Welcome to Erin's Farm
           </h1>
         </div>
       </div>

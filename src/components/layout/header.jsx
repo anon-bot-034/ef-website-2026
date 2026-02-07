@@ -20,7 +20,8 @@ const Header = ({ variant = 'home' }) => {
     // { href: '/pricing', label: 'Pricing' },
     // { href: '/the-animals', label: 'The Animals' },
     // { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' }
+    { href: '/contact', label: 'Contact' },
+    { href: '/donate', label: 'Donate' }
   ];
 
   return (
