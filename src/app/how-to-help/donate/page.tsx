@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Header from '@/components/layout/header';
 
 const presetAmounts = [10, 20, 50, 100];
@@ -12,6 +13,7 @@ const frequencies = [
 ];
 
 export default function DonatePage() {
+  const searchParams = useSearchParams();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -20,6 +22,17 @@ export default function DonatePage() {
   const [frequency, setFrequency] = useState('one-time');
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const prefill = searchParams.get('amount');
+    if (prefill) {
+      const parsed = parseFloat(prefill);
+      if (!isNaN(parsed) && parsed > 0) {
+        setCustomAmount(String(parsed));
+        setAmount('');
+      }
+    }
+  }, [searchParams]);
 
   const selectedAmount = amount || (customAmount ? parseFloat(customAmount) : 0);
 

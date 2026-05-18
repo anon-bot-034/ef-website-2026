@@ -1,15 +1,15 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import Image from 'next/image';
 
 const slides = [
-  { src: '/images/kids-looking-at-cows.jpg', alt: 'Kids looking at cows' },
-  { src: null, alt: 'Placeholder 2' },
-  { src: null, alt: 'Placeholder 3' },
-  { src: null, alt: 'Placeholder 4' },
-  { src: null, alt: 'Placeholder 5' },
-  { src: null, alt: 'Placeholder 6' },
+  { src: '/images/kids-looking-at-cows.jpg', alt: "Kids at Erin's Farm" },
+  { src: '/images/IMG_4815.jpg', alt: "Animals at Erin's Farm" },
+  { src: '/images/IMG_5549.jpg', alt: "Erin's Farm" },
+  { src: '/images/IMG_5706.jpg', alt: "Erin's Farm" },
+  { src: '/images/IMG_7654.jpg', alt: "Erin's Farm" },
+  { src: '/images/IMG_4773 (1).jpg', alt: "Erin's Farm" },
 ];
 
 const HeroSection = () => {
@@ -22,6 +22,11 @@ const HeroSection = () => {
   const next = useCallback(() => {
     setCurrent((i) => (i === slides.length - 1 ? 0 : i + 1));
   }, []);
+
+  useEffect(() => {
+    const timer = setInterval(next, 8000);
+    return () => clearInterval(timer);
+  }, [next]);
 
   return (
     <div className="relative min-h-[85vh] flex items-center overflow-hidden">

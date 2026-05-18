@@ -1,6 +1,12 @@
 import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
-const RECIPIENT = 'FILLER@example.com'; // TODO: replace with real email
+const resend = new Resend(process.env.RESEND_API_KEY);
+const RECIPIENT = 'connor.yanz@gmail.com';
+
+function esc(str: string) {
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
 
 export async function POST(request: Request) {
   try {
@@ -10,13 +16,17 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'All fields are required.' }, { status: 400 });
     }
 
-    // TODO: Replace with a real email service (SendGrid, Resend, etc.)
-    // For now, log to the server console so you can verify it works.
-    console.log('--- New Contact Form Submission ---');
-    console.log(`To: ${RECIPIENT}`);
-    console.log(`From: ${name} <${email}>`);
-    console.log(`Message: ${message}`);
-    console.log('----------------------------------');
+    await resend.emails.send({
+      from: "Erin's Farm <onboarding@resend.dev>",
+      to: RECIPIENT,
+      subject: `New Contact Form Message from ${name}`,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>From:</strong> ${esc(name)} &lt;${esc(email)}&gt;</p>
+        <hr />
+        <p>${esc(message).replace(/\n/g, '<br />')}</p>
+      `,
+    });
 
     return NextResponse.json({ success: true });
   } catch {

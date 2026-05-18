@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Header from '@/components/layout/header';
 
 export default function WhatWeDoPage() {
@@ -33,6 +34,14 @@ export default function WhatWeDoPage() {
               <p className="text-gray-600 text-lg leading-relaxed">
                 As a non-profit rescue farm and animal sanctuary located in Hobart, Indiana, we are dedicated to giving each animal a second chance at life in a safe and nurturing environment.
               </p>
+              <div className="grid grid-cols-2 gap-4 pt-4">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+                  <Image src="/images/IMG_0666.jpg" alt="Rescued animals at Erin's Farm" fill className="object-cover" />
+                </div>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+                  <Image src="/images/IMG_2923.jpg" alt="Animals at Erin's Farm" fill className="object-cover" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -61,6 +70,14 @@ export default function WhatWeDoPage() {
               <p className="text-gray-600 text-lg leading-relaxed">
                 From school field trips and Girl Scout visits to community outreach events, our goal is to foster compassion and responsibility toward all living creatures through real, meaningful interactions.
               </p>
+              <div className="grid grid-cols-2 gap-4 pt-4">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+                  <Image src="/images/kids-looking-at-cows.jpg" alt="Kids at Erin's Farm" fill className="object-cover" />
+                </div>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+                  <Image src="/images/IMG_7309.jpg" alt="Education at Erin's Farm" fill className="object-cover" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

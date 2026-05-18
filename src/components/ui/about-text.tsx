@@ -1,8 +1,10 @@
+import Image from 'next/image';
+
 const stats = [
-  { number: '250', label: 'Animals', placeholder: 'Goat photo' },
-  { number: '30', label: 'Volunteers', placeholder: 'Volunteer photo' },
-  { number: '200', label: 'Great Events', placeholder: 'Event photo' },
-  { number: '20,000', label: 'Classrooms Educated', placeholder: 'Classroom photo' },
+  { number: '250', label: 'Animals', photo: '/images/IMG_5273.jpg' },
+  { number: '30', label: 'Volunteers', photo: '/images/IMG_4773 (1).jpg' },
+  { number: '200', label: 'Great Events', photo: '/images/IMG_7506.jpg' },
+  { number: '20,000', label: 'Classrooms Educated', photo: '/images/IMG_5575.jpg' },
 ];
 
 const AboutText: React.FC = () => {
@@ -38,8 +40,8 @@ const AboutText: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-12 md:gap-20">
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col items-center text-center">
-                <div className="w-40 h-40 rounded-full bg-gray-300 flex items-center justify-center mb-4 overflow-hidden">
-                  <span className="text-gray-500 text-xs">{stat.placeholder}</span>
+                <div className="w-40 h-40 rounded-full mb-4 overflow-hidden relative">
+                  <Image src={stat.photo} alt={stat.label} fill className="object-cover" />
                 </div>
                 <p className="text-3xl font-bold text-gray-900">{stat.number}</p>
                 <p className="text-base font-medium text-gray-600">{stat.label}</p>

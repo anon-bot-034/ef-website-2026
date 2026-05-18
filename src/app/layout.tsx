@@ -65,7 +65,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <Link
+
+<Link
           href="/how-to-help/donate"
           className="fixed bottom-6 right-6 z-[100] bg-darkGreen-900 hover:bg-darkGreen-800 text-white font-semibold px-5 py-3 rounded-full shadow-lg transition flex items-center gap-2"
         >

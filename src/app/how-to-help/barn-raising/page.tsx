@@ -40,7 +40,6 @@ export default function BarnRaisingPage() {
           <p className="text-gray-600 leading-relaxed">
             We&rsquo;re inviting supporters to sponsor individual components of the build. Whether you fund a
             section of fencing or the entire foundation, every contribution brings us closer to opening day.
-            Payment plans are available for larger sponsorships&mdash;reach out to us to discuss options.
           </p>
         </div>
       </section>
@@ -50,7 +49,7 @@ export default function BarnRaisingPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">Sponsor a Component</h2>
           <p className="text-gray-500 text-center mb-12 max-w-xl mx-auto">
-            Choose a piece of the project to sponsor. Payment plans are available for items over $5,000.
+            Choose a piece of the project to sponsor.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {sponsorableItems.map((item) => (
@@ -61,7 +60,7 @@ export default function BarnRaisingPage() {
                 </p>
                 <p className="text-sm text-gray-600 leading-relaxed flex-1">{item.description}</p>
                 <Link
-                  href="/how-to-help/donate"
+                  href={`/how-to-help/donate?amount=${item.price}`}
                   className="mt-5 inline-block text-center bg-darkGreen-900 hover:bg-darkGreen-800 text-white font-semibold px-6 py-3 rounded-lg text-sm transition"
                 >
                   Sponsor This
@@ -72,24 +71,7 @@ export default function BarnRaisingPage() {
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-2xl text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Interested in a Payment Plan?</h2>
-          <p className="text-gray-600 leading-relaxed mb-8">
-            For sponsorships over $5,000 we offer flexible monthly payment plans. Get in touch and we&rsquo;ll
-            work out a schedule that fits your budget.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-darkGreen-900 hover:bg-darkGreen-800 text-white font-semibold px-8 py-4 rounded-lg transition"
-          >
-            Contact Us
-          </Link>
-        </div>
-      </section>
-
-      <footer className="bg-darkGreen-900 py-6 text-center mt-auto">
+<footer className="bg-darkGreen-900 py-6 text-center mt-auto">
         <p className="text-white/80 text-sm">Erin&apos;s Farm NFP &copy; 2026 | All Rights Reserved</p>
       </footer>
     </div>
