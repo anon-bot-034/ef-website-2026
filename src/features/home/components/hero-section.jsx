@@ -7,7 +7,7 @@ const slides = [
   { src: '/images/kids-looking-at-cows.jpg', alt: "Kids at Erin's Farm" },
   { src: '/images/IMG_4815.jpg', alt: "Animals at Erin's Farm" },
   { src: '/images/IMG_5549.jpg', alt: "Erin's Farm" },
-  { src: '/images/IMG_5706.jpg', alt: "Erin's Farm" },
+  { src: '/images/IMG_7289.jpg', alt: "Erin's Farm" },
   { src: '/images/IMG_7654.jpg', alt: "Erin's Farm" },
   { src: '/images/IMG_4773 (1).jpg', alt: "Erin's Farm" },
 ];

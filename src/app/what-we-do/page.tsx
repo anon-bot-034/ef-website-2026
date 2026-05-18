@@ -72,7 +72,7 @@ export default function WhatWeDoPage() {
               </p>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
-                  <Image src="/images/kids-looking-at-cows.jpg" alt="Kids at Erin's Farm" fill className="object-cover" />
+                  <Image src="/images/IMG_5268.jpg" alt="Kids at Erin's Farm" fill className="object-cover" />
                 </div>
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
                   <Image src="/images/IMG_7309.jpg" alt="Education at Erin's Farm" fill className="object-cover" />

@@ -25,7 +25,9 @@ const Header = ({ variant = 'home' }) => {
       label: 'How to Help',
       children: [
         { href: '/how-to-help/donate', label: 'Donate' },
-        { href: '/how-to-help/adopt-sponsor', label: 'Adopt/Sponsor an Animal' },
+        // TODO: Re-enable when adoption form + animal photos are finalized
+        // { href: '/how-to-help/adopt-sponsor', label: 'Adopt/Sponsor an Animal' },
+        // TODO: Re-enable when barn raising campaign is ready to launch
         // { href: '/how-to-help/barn-raising', label: 'Barn Raising' },
       ],
     },

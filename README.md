@@ -1,103 +1,53 @@
-# Fourpoints - Next.js Tailwind CSS SaaS Application Template
+# Erin's Farm — Website 2026
 
-## Description
+Next.js 15 + Tailwind CSS. Deployed on Vercel at erinsfarm.net.
 
-Fourpoints is a modern Next.js template designed to revolutionize IT project planning for teams worldwide. Featuring a sleek, professional design, this template provides an ideal solution for developing comprehensive business proposals with a focus on scope, budget, and timelines. It includes essential pages like the Homepage, About Us, Pricing Page, Blog Listing Page, Contact Us, Login, and Register pages.
-
-This template is created using Tailwind CSS version 4 and Next.js 14+, offering a modern, component-based architecture with App Router support for excellent performance and developer experience.
-
-> [Click here to view demo](https://nextjs-fourpoints-full.vercel.app/)
-
-> **Important:** You are currently viewing only the starter template, which includes only the homepage. The full template is available for free to users who are registered on my website and signed up to my mailing list.
-> [Click here to download the full template](https://www.pixelrocket.store/free-templates/nextjs-templates/four-points-tailwind-nextjs-website-template)
-
-## Template Versions
-
-This template is available in multiple frameworks:
-
-| Framework | Link |
-|-----------|------|
-| HTML | [Fourpoints HTML Template](https://pixelrocket.store/free-templates/html-templates/four-points-tailwind-html-website-template) |
-| React | [Fourpoints React Template](https://pixelrocket.store/free-templates/react-templates/four-points-tailwind-react-website-template) |
-| Next.js | [Fourpoints Next.js Template](https://pixelrocket.store/free-templates/nextjs-templates/four-points-tailwind-nextjs-website-template) |
-
-## More Free Templates
-
-| Template | Preview | HTML | React | Next.js |
-|----------|---------|------|-------|---------|
-| Easy Tax | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/easytax.png" width="150">](https://nextjs-easytax-full.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/easy-tax-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/easy-tax-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/easy-tax-nextjs-website-template) |
-| Frequencii | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/frequencii.png" width="150">](https://nextjs-frequencii-full.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/frequenci-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/frequencii-tailwind-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/frequencii-tailwind-nextjs-website-template) |
-| Fauna & Flora | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/florafauna.png" width="150">](https://react-fauna-full-hy1u.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/fauna-flora-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/fauna-flora-tailwind-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/fauna-flora-tailwind-nextjs-website-template) |
-| Global Bank | [<img src="https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/globalbank.png" width="150">](https://nextjs-globalbank-full.vercel.app/) | [HTML](https://pixelrocket.store/free-templates/html-templates/global-bank-tailwind-html-website-template) | [React](https://pixelrocket.store/free-templates/react-templates/global-bank-react-website-template) | [Next.js](https://pixelrocket.store/free-templates/nextjs-templates/global-bank-nextjs-website-template) |
-
-[![Template Image](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/fourpoints.png)](https://nextjs-fourpoints-full.vercel.app/)
-
-## Pages
-- Homepage
-- About Us (full version only)
-- Pricing (full version only)
-- Blog (full version only)
-- Contact Us (full version only)
-- Login (full version only)
-- Register (full version only)
-
-## 1. Getting Started
-
-### Prerequisites
-- Node.js 18+ and npm
-
-### Project Structure
-```
-src/
-├── app/                 # Next.js App Router pages and layouts
-├── components/          # Reusable UI components
-├── features/            # Feature-based components
-├── data/               # Static data and content
-└── styles/             # Global styles and Tailwind imports
-```
-
-## 2. Installation
+## Dev
 
 ```bash
-# Install dependencies
 npm install
-
-# Run development server
-npm run dev
-
-# Build for production
+npm run dev       # http://localhost:3000
 npm run build
-
-# Start production server
-npm start
 ```
 
-The development server will start at `http://localhost:3000`
+## Environment Variables
 
-## 3. Build and Deploy
+Add these in Vercel → Settings → Environment Variables:
 
-```bash
-# Create production build
-npm run build
+| Key | Purpose |
+|-----|---------|
+| `RESEND_API_KEY` | Sends contact + adoption form emails to connor.yanz@gmail.com |
 
-# Start the production server
-npm start
+---
 
-# The build output will be optimized for production
-# Deploy to Vercel, Netlify, or any Next.js-compatible hosting provider
-```
+## TODO
 
-## 4. Contact
+### Re-enable when ready
+- [ ] **Adopt/Sponsor an Animal page** (`/how-to-help/adopt-sponsor`)
+  - Nav link commented out in `src/components/layout/header.jsx`
+  - Page exists at `src/app/how-to-help/adopt-sponsor/page.tsx`
+  - Needs: correct animal photos assigned to each animal card, review form fields
+  - To re-enable: uncomment the nav item in header.jsx
 
-If you have any questions, feel free to contact me:
+- [ ] **Barn Raising page** (`/how-to-help/barn-raising`)
+  - Nav link commented out in `src/components/layout/header.jsx`
+  - Page exists at `src/app/how-to-help/barn-raising/page.tsx`
+  - To re-enable: uncomment the nav item in header.jsx when campaign is ready to launch
 
-support@pixelrocket.store
+### Email
+- [ ] Sign up at resend.com, get API key, add as `RESEND_API_KEY` in Vercel env vars
+  - Activates contact form + adoption form emails
+  - Both send to connor.yanz@gmail.com
 
-## 5. Learn Frontend Web Development
+### Photos
+- [ ] Assign correct animal photos to each animal on the adopt-sponsor page
+  - Current assignments are placeholder/random — swap filenames in `src/app/how-to-help/adopt-sponsor/page.tsx`
 
-Want to learn frontend web development so you can build templates like this one? Visit my site: https://www.pixelrocket.store for a range of frontend web development learning resources and courses.
+### Domain
+- [ ] DNS fully propagated to Vercel (Netfirms nameservers updated)
+- [ ] Confirm erinsfarm.net loads new site with padlock
 
-## 6. Credits & Special thanks
-
-Image placeholders from https://unsplash.com/
-Screenshot & Logo placeholders from https://www.figma.com/community
+### Nice to have
+- [ ] Add rate limiting to `/api/contact` and `/api/adopt` to prevent form spam
+- [ ] Meta Pixel ID confirmed and tested in Events Manager
+- [ ] GA4 real-time view shows traffic after go-live

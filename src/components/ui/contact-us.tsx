@@ -64,7 +64,7 @@ export default function ContactUsText() {
                 <Image src="/images/IMG_4776.jpg" alt="" fill className="object-cover" />
               </div>
               <div className="col-span-2 aspect-[2/1] rounded-2xl overflow-hidden relative">
-                <Image src="/images/IMG_7654.jpg" alt="" fill className="object-cover" />
+                <Image src="/images/IMG_5609.jpg" alt="" fill className="object-cover" />
               </div>
             </div>
 

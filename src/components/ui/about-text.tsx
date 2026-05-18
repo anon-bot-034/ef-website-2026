@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const stats = [
   { number: '250', label: 'Animals', photo: '/images/IMG_5273.jpg' },
-  { number: '30', label: 'Volunteers', photo: '/images/IMG_4773 (1).jpg' },
+  { number: '30', label: 'Volunteers', photo: '/images/IMG_5547.jpg' },
   { number: '200', label: 'Great Events', photo: '/images/IMG_7506.jpg' },
   { number: '20,000', label: 'Classrooms Educated', photo: '/images/IMG_5575.jpg' },
 ];
